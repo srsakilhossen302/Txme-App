@@ -11,14 +11,14 @@ import '../../../../Utils/AppColors/app_colors.dart';
 import '../../../../core/App_Routes/app_routes.dart';
 import '../../../Widgegt/Custom_Button/custom_button.dart';
 
-class Verifyotppage extends StatefulWidget {
-  const Verifyotppage({super.key});
+class VerifyotppageS extends StatefulWidget {
+  const VerifyotppageS({super.key});
 
   @override
-  State<Verifyotppage> createState() => _VerifyotppageState();
+  State<VerifyotppageS> createState() => _VerifyotppageSState();
 }
 
-class _VerifyotppageState extends State<Verifyotppage> {
+class _VerifyotppageSState extends State<VerifyotppageS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,9 +48,9 @@ class _VerifyotppageState extends State<Verifyotppage> {
           Padding(
             padding:  EdgeInsets.only(right: 50.w, left: 50.w),
             child: Text(AppString.otpText.tr, style: TextStyle(
-              fontSize: 14.sp,
-              fontWeight: FontWeight.w400,
-              color: AppColors.black700
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w400,
+                color: AppColors.black700
             ),),
           ),
 
@@ -71,9 +71,9 @@ class _VerifyotppageState extends State<Verifyotppage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(AppString.receiveCode.tr, style: TextStyle(
-                  fontWeight: FontWeight.w400,
-                  fontSize: 16.sp,
-                  color: AppColors.black700
+                    fontWeight: FontWeight.w400,
+                    fontSize: 16.sp,
+                    color: AppColors.black700
                 ),),
                 Text(AppString.Resend.tr, style: TextStyle(
                     fontWeight: FontWeight.w500,
@@ -102,7 +102,7 @@ class _VerifyotppageState extends State<Verifyotppage> {
               ),
             ),
             onTap: () {
-              Get.toNamed(AppRoute.faceverificationdone);
+              Get.toNamed(AppRoute.createaccount);
             },
           ),
         ],

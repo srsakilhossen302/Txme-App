@@ -7,6 +7,19 @@ class AppString{
   static const String chooseLanguage = "Choose Language" ;
 
 
+  ///==============>>>>>>>>>> Sign UP Screen View <<<<<<<<<<<===============///
+
+
+  static const String Bycreating1 = "By creating an account, I accept the" ;
+  static const String Bycreating2 = "&" ;
+  static const String Terms = "Terms" ;
+  static const String CreateAccount = "Create Account" ;
+  static const String phone = "Phone Number" ;
+  static const String Conditions = "& Conditions" ;
+  static const String  PrivacyPolicy = " Privacy Policy" ;
+  static const String  VerifyEmail  = " Verify Email " ;
+  static const String  verifyNumber  = " Verify Number " ;
+  static const String  already  = " Already have an account? " ;
 
 
   ///==============>>>>>>>>>> Sign As Screen View <<<<<<<<<<<===============///

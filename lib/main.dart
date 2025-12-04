@@ -6,7 +6,14 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'Language/translator.dart';
 import 'View/Screen/splashScreen/splash_screen_view.dart';
 import 'core/App_Routes/app_routes.dart';
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 

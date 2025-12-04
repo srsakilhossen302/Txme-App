@@ -60,7 +60,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
                     Text(
                       AppString.txmeRecaim,
                       style: TextStyle(
-                        fontSize: 16.sp,
+                        fontSize: 16,
                         fontWeight: FontWeight.w400,
                         color: AppColors.black800,
                       ),
