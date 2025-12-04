@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1019933575526",
+    "project_id": "txme-app",
+    "storage_bucket": "txme-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019933575526:android:bea253109af543b2b1a0a7",
+        "android_client_info": {
+          "package_name": "com.example.txme_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDPBodJGskiybnv1yDYDsV4pl1cq0HJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
