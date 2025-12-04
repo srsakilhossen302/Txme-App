@@ -34,6 +34,11 @@ class AppString{
   static const String authenticateFaceID = "Authenticate Using Face ID" ;
   static const String verificationDone = "Verification Done" ;
   static const String Continue = "Continue" ;
+  static const String verifyOTP = "Verify OTP" ;
+  static const String Verify = "Verify" ;
+  static const String Resend = "Resend" ;
+  static const String receiveCode = "Didn’t receive the code?" ;
+  static const String otpText = "We have sent a verification code to your email. Please check and enter the code here." ;
 
 
 }

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:txme_app/Utils/AppColors/app_colors.dart';
 import 'package:txme_app/Utils/AppIcons/app_icons.dart';
 import 'package:txme_app/Utils/StaticString/static_string.dart';
 import 'package:txme_app/View/Widgegt/Custom_Button/custom_button.dart';
+import 'package:txme_app/core/App_Routes/app_routes.dart';
 
 class Faceverificationdone extends StatefulWidget {
   const Faceverificationdone({super.key});
@@ -59,7 +62,9 @@ class _FaceverificationdoneState extends State<Faceverificationdone> {
                 ),
               ),
             ),
-            onTap: () {},
+            onTap: () {
+              Get.toNamed(AppRoute.homepage);
+            },
           ),
         ],
       ),

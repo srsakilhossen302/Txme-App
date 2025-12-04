@@ -18,28 +18,28 @@ class SplashScreenView extends StatefulWidget {
 
 class _SplashScreenViewState extends State<SplashScreenView> {
 
-  @override
-  void initState() {
-    super.initState();
-    _checkIfGetStartedClicked();
-  }
-
-  void _checkIfGetStartedClicked() async {
-    String isClicked =
-    await SharePrefsHelper.getString("isGetStartedClicked");
-    if (isClicked == "true") {
-      // If already clicked, navigate directly to next page
-      Get.offNamed(AppRoute.chooseLanguage); // or your home route
-    }
-  }
-
-  void _onGetStarted() async {
-    // Save that user clicked the button
-    await SharePrefsHelper.setString("isGetStartedClicked", "true");
-
-    // Navigate to next screen
-    Get.toNamed(AppRoute.chooseLanguage);
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _checkIfGetStartedClicked();
+  // }
+  //
+  // void _checkIfGetStartedClicked() async {
+  //   String isClicked =
+  //   await SharePrefsHelper.getString("isGetStartedClicked");
+  //   if (isClicked == "true") {
+  //     // If already clicked, navigate directly to next page
+  //     Get.offNamed(AppRoute.chooseLanguage); // or your home route
+  //   }
+  // }
+  //
+  // void _onGetStarted() async {
+  //   // Save that user clicked the button
+  //   await SharePrefsHelper.setString("isGetStartedClicked", "true");
+  //
+  //   // Navigate to next screen
+  //   Get.toNamed(AppRoute.chooseLanguage);
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +72,10 @@ class _SplashScreenViewState extends State<SplashScreenView> {
 
             SizedBox(height: 42.h),
             CustomButton(
-              onTap: _onGetStarted,
+              onTap: (){
+                Get.toNamed(AppRoute.chooseLanguage);
+              },
+              //_onGetStarted,
               height: 40.h,
               width: 167.w,
               BoxDecoration: BoxDecoration(
@@ -80,7 +83,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
                   borderRadius: BorderRadius.circular(12.r)),
               child: Center(
                 child: Text(
-                  AppString.getStarted,
+                  AppString.getStarted.tr,
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w700,

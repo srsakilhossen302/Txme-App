@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:txme_app/Utils/AppColors/app_colors.dart';
 import 'package:txme_app/Utils/AppImg/app_img.dart';
 import 'package:txme_app/Utils/StaticString/static_string.dart';
 import 'package:txme_app/View/Widgegt/Custom_Button/custom_button.dart';
 import 'package:txme_app/View/Widgegt/Email_Input_Field/EmailInputField.dart';
+import 'package:txme_app/core/App_Routes/app_routes.dart';
 
 class EnterEmail extends StatefulWidget {
   const EnterEmail({super.key});
@@ -55,7 +58,9 @@ class _EnterEmailState extends State<EnterEmail> {
                 ),
               ),
             ),
-            onTap: () {},
+            onTap: () {
+              Get.toNamed(AppRoute.verifyotppage);
+            },
           ),
         ],
       ),
