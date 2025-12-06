@@ -32,7 +32,7 @@ class _SignAsScreenState extends State<SignAsScreen> {
                 child: Image.asset(AppImg.splashscreen, fit: BoxFit.cover),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 20.h),
             Center(
               child: Image.asset(AppImg.image15, height: 110.h, width: 110.w),
             ),
@@ -124,7 +124,7 @@ class _SignAsScreenState extends State<SignAsScreen> {
               width: 353.w,
               BoxDecoration: BoxDecoration(
                 color: AppColors.red601,
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(12.r),
               ),
               child: Center(child: Text(AppString.next.tr)),
               onTap: () {

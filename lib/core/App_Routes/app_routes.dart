@@ -3,8 +3,14 @@ import 'package:get/get_navigation/src/routes/get_route.dart';
 import '../../View/Screen/Choose_Language/choose_language.dart';
 import '../../View/Screen/Home_Page/homePage.dart';
 import '../../View/Screen/Sign _up/Create_Account/CreateAccount.dart';
+import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen.dart';
+import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen2.dart';
+import '../../View/Screen/Sign _up/FaceIDSetupScreen/SignUpDone.dart';
 import '../../View/Screen/Sign _up/Sign_Up_Email/Sign_up_Email.dart';
 import '../../View/Screen/Sign _up/Sign_Up_Phone/Sign_Up_Phone.dart';
+import '../../View/Screen/Sign _up/VerifyYourIdentity/UploadDocuments1.dart';
+import '../../View/Screen/Sign _up/VerifyYourIdentity/UploadDocuments2.dart';
+import '../../View/Screen/Sign _up/VerifyYourIdentity/VerifyYourIdentity.dart';
 import '../../View/Screen/Sign _up/Verifyotppage/Verifyotppage.dart';
 import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/Enter_email/enter_email.dart';
 import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/SignInWithBiometrics.dart';
@@ -31,6 +37,12 @@ class AppRoute {
   static const String verifyotppageS = "/verifyotppageS";
   static const String signUpPhone = "/signUpPhone";
   static const String createaccount = "/createaccount";
+  static const String faceIDSetupScreen = "/faceIDSetupScreen";
+  static const String faceIDSetupScreen2 = "/faceIDSetupScreen2";
+  static const String signupdone = "/signupdone";
+  static const String verifyyouridentity = "/verifyyouridentity";
+  static const String uploaddocuments1 = "/uploaddocuments1";
+  static const String uploaddocuments2 = "/uploaddocuments2";
 
 
   static List<GetPage> routes = [
@@ -50,6 +62,12 @@ class AppRoute {
     GetPage(name: verifyotppageS, page: () => const VerifyotppageS()),
     GetPage(name: signUpPhone, page: () => const SignUpPhone()),
     GetPage(name: createaccount, page: () =>  CreateAccountScreen()),
+    GetPage(name: faceIDSetupScreen, page: () =>  FaceIDSetupScreen()),
+    GetPage(name: faceIDSetupScreen2, page: () =>  FaceIDSetupScreen2()),
+    GetPage(name: signupdone, page: () =>  Signupdone()),
+    GetPage(name: verifyyouridentity, page: () =>  Verifyyouridentity()),
+    GetPage(name: uploaddocuments1, page: () =>  Uploaddocuments1()),
+    GetPage(name: uploaddocuments2, page: () =>  Uploaddocuments2()),
 
 
 
