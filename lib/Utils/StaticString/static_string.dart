@@ -98,4 +98,27 @@ class AppString{
   static const String otpText = "We have sent a verification code to your email. Please check and enter the code here." ;
 
 
+///==============>>>>>>>>>> Home Screen View <<<<<<<<<<<===============///
+
+
+  static const String searchServices = "Search for services" ;
+  static const String popularServices = "Popular Services" ;
+  static const String viewAll = "View all" ;
+  static const String painting = "Painting" ;
+  static const String plumbing = "Plumbing" ;
+  static const String solar = "Solar" ;
+  static const String airCondition = "Air Condition" ;
+  static const String roofRepair = "Roof Repair" ;
+  static const String electric = "Electric work" ;
+  static const String favoriteProviders = "Favorite Providers" ;
+  static const String availableToday = "Available Today" ;
+  static const String bookNow = "Book Now" ;
+  static const String viewProfile = "View Profile" ;
+  static const String upcomingAppointments = "Upcoming Appointments" ;
+  static const String tomorrowTime = "Tomorrow, 10:00 AM" ;
+  static const String searchFilter = "Search Filter" ;
+  static const String serviceType = "Service Type" ;
+  static const String electrician = "Electrician" ;
+  static const String serviceTiming = "Service Timing" ;
+
 }

@@ -1,7 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
-
+import '../../View/Screen/Choose_Language/LanguagePage.dart';
 import '../../View/Screen/Choose_Language/choose_language.dart';
-import '../../View/Screen/Home_Page/homePage.dart';
 import '../../View/Screen/Sign _up/Create_Account/CreateAccount.dart';
 import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen.dart';
 import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen2.dart';
@@ -20,10 +19,11 @@ import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/Verifyfac
 import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/verifyFaceID.dart';
 import '../../View/Screen/Sign-in/Verify_OTP_Page/verifyOTPPage.dart';
 import '../../View/Screen/Sign_As_Screen/sign_as_screen.dart';
+import '../../View/Screen/User Role/Home_Page/SearchFilter/SearchFilter.dart';
+import '../../View/Screen/User Role/Home_Page/homePage.dart';
 
 class AppRoute {
   ///==================== Initial Routes ====================///
-  static const String chooseLanguage = "/chooseLanguage";
   static const String signAsScreen = "/signAsScreen";
   static const String signinwithbiometrics = "/signinwithbiometrics";
   static const String verifyfingerprint = "/verifyfingerprint";
@@ -43,12 +43,13 @@ class AppRoute {
   static const String verifyyouridentity = "/verifyyouridentity";
   static const String uploaddocuments1 = "/uploaddocuments1";
   static const String uploaddocuments2 = "/uploaddocuments2";
+  static const String searchfilter = "/searchfilter";
+  static const String languagepage = "/languagepage";
 
 
   static List<GetPage> routes = [
     ///==================== Authentication  Routes ====================///
 
-    GetPage(name: chooseLanguage, page: () => const ChooseLanguage()),
     GetPage(name: signAsScreen, page: () => const SignAsScreen()),
     GetPage(name: signinwithbiometrics, page: () => const SigninWithBiometrics()),
     GetPage(name: verifyfingerprint, page: () => const Verifyfingerprint()),
@@ -68,6 +69,9 @@ class AppRoute {
     GetPage(name: verifyyouridentity, page: () =>  Verifyyouridentity()),
     GetPage(name: uploaddocuments1, page: () =>  Uploaddocuments1()),
     GetPage(name: uploaddocuments2, page: () =>  Uploaddocuments2()),
+    GetPage(name: searchfilter, page: () =>  Searchfilter()),
+    GetPage(name: searchfilter, page: () =>  Searchfilter()),
+    GetPage(name: languagepage, page: () =>  Languagepage()),
 
 
 

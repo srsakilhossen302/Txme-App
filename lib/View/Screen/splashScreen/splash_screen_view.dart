@@ -73,7 +73,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
             SizedBox(height: 42.h),
             CustomButton(
               onTap: (){
-                Get.toNamed(AppRoute.chooseLanguage);
+                Get.toNamed(AppRoute.languagepage);
               },
               //_onGetStarted,
               height: 40.h,
