@@ -20,7 +20,17 @@ class AppImg {
   static const String ellipse = "$basePath/Ellipse 134.png";
   static const String vector = "$basePath/Vector.png";
   static const String searchIcon = "$basePath/SearchIcon.png";
-
+  static const String Eimg1 = "$basePath/E.img1.png";
+  static const String star = "$basePath/Star.png";
+  static const String completed = "$basePath/Completed.png";
+  static const String experience = "$basePath/Experience.png";
+  static const String Sidingrepair = "$basePath/Siding repair.png";
+  static const String SpinMop = "$basePath/Spin Mop.png";
+  static const String Plumber01 = "$basePath/Plumber01.png";
+  static const String carpet = "$basePath/Carpet.png";
+  static const String Drilling = "$basePath/Drilling.png";
+  static const String lawn = "$basePath/lawn.png";
+  static const String Weedcontrol = "$basePath/Weed control.png";
 
 
 

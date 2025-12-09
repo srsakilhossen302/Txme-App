@@ -1,3 +1,5 @@
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import '../../View/Screen/Choose_Language/LanguagePage.dart';
 import '../../View/Screen/Choose_Language/choose_language.dart';
@@ -19,6 +21,10 @@ import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/Verifyfac
 import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/verifyFaceID.dart';
 import '../../View/Screen/Sign-in/Verify_OTP_Page/verifyOTPPage.dart';
 import '../../View/Screen/Sign_As_Screen/sign_as_screen.dart';
+import '../../View/Screen/User Role/Home_Page/AppoinmentScreen/AppoinmentScreen.dart';
+import '../../View/Screen/User Role/Home_Page/ElectricianProviders/ElectricianProviders.dart' show WorkerCard, Electricianproviders;
+import '../../View/Screen/User Role/Home_Page/NotificationPage/NotificationPage.dart';
+import '../../View/Screen/User Role/Home_Page/Popularservices/Popularservices.dart';
 import '../../View/Screen/User Role/Home_Page/SearchFilter/SearchFilter.dart';
 import '../../View/Screen/User Role/Home_Page/homePage.dart';
 
@@ -45,6 +51,11 @@ class AppRoute {
   static const String uploaddocuments2 = "/uploaddocuments2";
   static const String searchfilter = "/searchfilter";
   static const String languagepage = "/languagepage";
+  static const String electricianproviders = "/electricianproviders";
+  static const String popularservices = "/popularservices";
+  static const String notificationPage = "/notificationPage";
+  static const String appointmentsPage = "/appointmentsPage";
+
 
 
   static List<GetPage> routes = [
@@ -72,6 +83,12 @@ class AppRoute {
     GetPage(name: searchfilter, page: () =>  Searchfilter()),
     GetPage(name: searchfilter, page: () =>  Searchfilter()),
     GetPage(name: languagepage, page: () =>  Languagepage()),
+    GetPage(name: electricianproviders, page: () =>  Electricianproviders()),
+    GetPage(name: popularservices, page: () =>  Popularservices()),
+    GetPage(name: notificationPage, page: () =>  NotificationPage()),
+    GetPage(name: appointmentsPage, page: () =>  AppointmentsPage()),
+
+
 
 
 

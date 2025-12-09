@@ -11,7 +11,6 @@ import '../../../../Utils/AppColors/app_colors.dart';
 
 import '../../../Widgegt/CustomBottomNavBar/CustomBottomNavBar.dart';
 
-
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -28,7 +27,9 @@ class _HomepageState extends State<Homepage> {
         surfaceTintColor: Colors.transparent,
         backgroundColor: AppColors.FFFFFF,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
+          IconButton(onPressed: () {
+            Get.toNamed(AppRoute.notificationPage);
+          }, icon: Icon(Icons.notifications)),
         ],
         title: Row(
           children: [
@@ -64,17 +65,17 @@ class _HomepageState extends State<Homepage> {
                 child: TextField(
                   decoration: InputDecoration(
                     prefixIcon: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           Get.toNamed(AppRoute.searchfilter);
                         },
                         child: Icon(Icons.search_sharp)),
                     suffixIcon: GestureDetector(
                       onTap: () {
-                        Get.toNamed(AppRoute.searchfilter); // এখানে তোমার next screen
+                        Get.toNamed(
+                            AppRoute.searchfilter); // এখানে তোমার next screen
                       },
                       child: Image.asset(AppImg.adjustments),
                     ),
-
                     hintText: AppString.searchServices.tr,
                     border: InputBorder.none,
                   ),
@@ -93,12 +94,17 @@ class _HomepageState extends State<Homepage> {
                         fontSize: 16.sp,
                         color: AppColors.gray900),
                   ),
-                  Text(
-                    AppString.viewAll.tr,
-                    style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16.sp,
-                        color: AppColors.A7DFF),
+                  GestureDetector(
+                    onTap: (){
+                      Get.toNamed(AppRoute.popularservices);
+                    },
+                    child: Text(
+                      AppString.viewAll.tr,
+                      style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp,
+                          color: AppColors.A7DFF),
+                    ),
                   ),
                 ],
               ),
@@ -144,12 +150,17 @@ class _HomepageState extends State<Homepage> {
                         fontSize: 16.sp,
                         color: AppColors.gray900),
                   ),
-                  Text(
-                    AppString.viewAll.tr,
-                    style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16.sp,
-                        color: AppColors.A7DFF),
+                  GestureDetector(
+                    onTap: (){
+                      Get.toNamed(AppRoute.electricianproviders);
+                    },
+                    child: Text(
+                      AppString.viewAll.tr,
+                      style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp,
+                          color: AppColors.A7DFF),
+                    ),
                   ),
                 ],
               ),
@@ -178,12 +189,17 @@ class _HomepageState extends State<Homepage> {
                         fontSize: 16.sp,
                         color: AppColors.gray900),
                   ),
-                  Text(
-                    AppString.viewAll.tr,
-                    style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16.sp,
-                        color: AppColors.A7DFF),
+                  GestureDetector(
+                    onTap: (){
+                      Get.toNamed(AppRoute.appointmentsPage);
+                    },
+                    child: Text(
+                      AppString.viewAll.tr,
+                      style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp,
+                          color: AppColors.A7DFF),
+                    ),
                   ),
                 ],
               ),
@@ -203,7 +219,7 @@ class _HomepageState extends State<Homepage> {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children:  [
+                        children: [
                           Padding(
                             padding: EdgeInsets.only(top: 20.h, left: 20.w),
                             child: Text(
@@ -245,7 +261,7 @@ class _HomepageState extends State<Homepage> {
 
                     /// RIGHT IMAGE
                     Padding(
-                      padding:  EdgeInsets.only(right: 20.w),
+                      padding: EdgeInsets.only(right: 20.w),
                       child: ClipRRect(
                           borderRadius: BorderRadius.circular(50),
                           child: Image.asset(
@@ -258,7 +274,9 @@ class _HomepageState extends State<Homepage> {
                   ],
                 ),
               ),
-              SizedBox(height: 100,)
+              SizedBox(
+                height: 100,
+              )
             ],
           ),
         ),

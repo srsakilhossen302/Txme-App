@@ -120,5 +120,7 @@ class AppString{
   static const String serviceType = "Service Type" ;
   static const String electrician = "Electrician" ;
   static const String serviceTiming = "Service Timing" ;
+  static const String clearAll = "Clear All" ;
+  static const String applyFilters = "Apply Filters" ;
 
 }
