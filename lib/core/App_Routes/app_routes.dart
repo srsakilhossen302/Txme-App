@@ -1,8 +1,5 @@
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import '../../View/Screen/Choose_Language/LanguagePage.dart';
-import '../../View/Screen/Choose_Language/choose_language.dart';
 import '../../View/Screen/Sign _up/Create_Account/CreateAccount.dart';
 import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen.dart';
 import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen2.dart';
@@ -21,12 +18,15 @@ import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/Verifyfac
 import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/verifyFaceID.dart';
 import '../../View/Screen/Sign-in/Verify_OTP_Page/verifyOTPPage.dart';
 import '../../View/Screen/Sign_As_Screen/sign_as_screen.dart';
+import '../../View/Screen/User Role/Bookings/bookingsPage.dart';
 import '../../View/Screen/User Role/Home_Page/AppoinmentScreen/AppoinmentScreen.dart';
 import '../../View/Screen/User Role/Home_Page/ElectricianProviders/ElectricianProviders.dart' show WorkerCard, Electricianproviders;
 import '../../View/Screen/User Role/Home_Page/NotificationPage/NotificationPage.dart';
 import '../../View/Screen/User Role/Home_Page/Popularservices/Popularservices.dart';
 import '../../View/Screen/User Role/Home_Page/SearchFilter/SearchFilter.dart';
 import '../../View/Screen/User Role/Home_Page/homePage.dart';
+import '../../View/Screen/User Role/Message/messagePage.dart';
+import '../../View/Screen/User Role/Profile/MyProfile.dart';
 
 class AppRoute {
   ///==================== Initial Routes ====================///
@@ -55,6 +55,9 @@ class AppRoute {
   static const String popularservices = "/popularservices";
   static const String notificationPage = "/notificationPage";
   static const String appointmentsPage = "/appointmentsPage";
+  static const String profilePage = "/profilePage";
+  static const String messagepage = "/messagepage";
+  static const String bookingspage = "/bookingspage";
 
 
 
@@ -87,6 +90,9 @@ class AppRoute {
     GetPage(name: popularservices, page: () =>  Popularservices()),
     GetPage(name: notificationPage, page: () =>  NotificationPage()),
     GetPage(name: appointmentsPage, page: () =>  AppointmentsPage()),
+    GetPage(name: profilePage, page: () =>  ProfilePage()),
+    GetPage(name: messagepage, page: () =>  Messagepage()),
+    GetPage(name: bookingspage, page: () =>  Bookingspage()),
 
 
 

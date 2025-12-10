@@ -15,13 +15,13 @@ class CustomBottomNavBar extends StatelessWidget {
         Get.toNamed(AppRoute.homepage);
         break;
       case 1:
-        //Get.offNamed(Routes.BOOKINGS_PAGE);
+        Get.toNamed(AppRoute.bookingspage);
         break;
       case 2:
-        //Get.offNamed(Routes.MESSAGE_PAGE);
+        Get.toNamed(AppRoute.messagepage);
         break;
       case 3:
-        //Get.offNamed(Routes.PROFILE_PAGE);
+        Get.toNamed(AppRoute.profilePage);
         break;
     }
   }

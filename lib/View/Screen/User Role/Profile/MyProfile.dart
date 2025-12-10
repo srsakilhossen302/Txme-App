@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:txme_app/View/Screen/User%20Role/Home_Page/Profile/profile_controller.dart';
+import 'package:txme_app/View/Screen/User%20Role/Profile/profile_controller.dart';
+
+import '../../../Widgegt/CustomBottomNavBar/CustomBottomNavBar.dart';
+
 
 
 class ProfilePage extends StatelessWidget {
@@ -77,9 +80,9 @@ class ProfilePage extends StatelessWidget {
             const Text(
               "Profile information",
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15,
-                  color: Colors.black87),
+                  fontWeight: FontWeight.w500,
+                  fontSize: 18,
+                  color: Color(0xff565656)),
             ),
             const SizedBox(height: 12),
 
@@ -179,6 +182,7 @@ class ProfilePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: CustomBottomNavBar(selectedIndex: 3),
     );
   }
 
