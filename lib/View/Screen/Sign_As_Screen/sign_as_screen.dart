@@ -110,6 +110,7 @@ class _SignAsScreenState extends State<SignAsScreen> {
                       ),
                     ),
                     onTap: () {
+                      Get.toNamed(AppRoute.providerHomeScreen);
                       setState(() {
                         isUserSelected = false;
                       });

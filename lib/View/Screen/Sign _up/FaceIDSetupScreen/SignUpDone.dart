@@ -82,7 +82,7 @@ class _SignupdoneState extends State<Signupdone> {
               ),
             ),
             onTap: () {
-              Get.toNamed(AppRoute.verifyyouridentity);
+              Get.toNamed(AppRoute.homepage);
             },
           ),
         ],

@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:txme_app/Utils/AppImg/app_img.dart';
 
-import '../../../Widgegt/CustomBottomNavBar/CustomBottomNavBar.dart';
+import '../../../../Widgegt/CustomBottomNavBar/CustomBottomNavBar.dart';
+
 
 class Bookingspage extends StatefulWidget {
   const Bookingspage({super.key});
@@ -16,7 +18,11 @@ class _BookingspageState extends State<Bookingspage> {
     return Scaffold(
       body: Column(
         children: [
-          Text("dfsjkjkfdkjdf")
+
+
+
+
+
         ],
       ),
       bottomNavigationBar: CustomBottomNavBar(selectedIndex: 1),

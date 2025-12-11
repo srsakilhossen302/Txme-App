@@ -1,5 +1,7 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import '../../View/Screen/Choose_Language/LanguagePage.dart';
+import '../../View/Screen/Service Provider Role/HomePage/ProviderHomeScreen.dart';
+import '../../View/Screen/Service Provider Role/Provider Profile/ProviderProfile.dart';
 import '../../View/Screen/Sign _up/Create_Account/CreateAccount.dart';
 import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen.dart';
 import '../../View/Screen/Sign _up/FaceIDSetupScreen/FaceIDSetupScreen2.dart';
@@ -18,7 +20,7 @@ import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/Verifyfac
 import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/verifyFaceID.dart';
 import '../../View/Screen/Sign-in/Verify_OTP_Page/verifyOTPPage.dart';
 import '../../View/Screen/Sign_As_Screen/sign_as_screen.dart';
-import '../../View/Screen/User Role/Bookings/bookingsPage.dart';
+import '../../View/Screen/User Role/BookingsViewClient/Bookings/bookingsPage.dart';
 import '../../View/Screen/User Role/Home_Page/AppoinmentScreen/AppoinmentScreen.dart';
 import '../../View/Screen/User Role/Home_Page/ElectricianProviders/ElectricianProviders.dart' show WorkerCard, Electricianproviders;
 import '../../View/Screen/User Role/Home_Page/NotificationPage/NotificationPage.dart';
@@ -58,6 +60,8 @@ class AppRoute {
   static const String profilePage = "/profilePage";
   static const String messagepage = "/messagepage";
   static const String bookingspage = "/bookingspage";
+  static const String providerProfilePage = "/providerProfilePage";
+  static const String providerHomeScreen = "/providerHomeScreen";
 
 
 
@@ -93,6 +97,8 @@ class AppRoute {
     GetPage(name: profilePage, page: () =>  ProfilePage()),
     GetPage(name: messagepage, page: () =>  Messagepage()),
     GetPage(name: bookingspage, page: () =>  Bookingspage()),
+    GetPage(name: providerProfilePage, page: () =>  ProviderProfilePage()),
+    GetPage(name: providerHomeScreen, page: () =>  ProviderHomeScreen()),
 
 
 

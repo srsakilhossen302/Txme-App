@@ -31,6 +31,19 @@ class AppImg {
   static const String Drilling = "$basePath/Drilling.png";
   static const String lawn = "$basePath/lawn.png";
   static const String Weedcontrol = "$basePath/Weed control.png";
+  static const String editProfile = "$basePath/Edit Profile.png";
+  static const String verification = "$basePath/Verification.png";
+  static const String wallet = "$basePath/Wallet.png";
+  static const String notification = "$basePath/notification.png";
+  static const String pastInvoices = "$basePath/Past Invoices.png";
+  static const String FAQ = "$basePath/FAQ.png";
+  static const String Logout = "$basePath/Logout.png";
+  static const String Change = "$basePath/Change.png";
+  static const String LogoutV = "$basePath/LogoutV.png";
+  static const String download = "$basePath/folder-download.png";
+  static const String earnings = "$basePath/Earnings.png";
+  static const String active = "$basePath/Active.png";
+  static const String profession = "$basePath/Profession.png";
 
 
 
