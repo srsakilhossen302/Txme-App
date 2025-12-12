@@ -9,6 +9,7 @@ class AppIcons {
   static const String faceId = "$basePath/face-id.svg";
   static const String faceIdScan = "$basePath/Glyph.svg";
   static const String success = "$basePath/Success.svg";
+  static const String chevronleft = "$basePath/chevron-left.svg";
 
 
 

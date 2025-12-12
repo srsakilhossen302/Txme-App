@@ -102,7 +102,7 @@ class _VerifyotppageSState extends State<VerifyotppageS> {
               ),
             ),
             onTap: () {
-              Get.toNamed(AppRoute.createaccount);
+              Get.toNamed(AppRoute.signUpPhone);
             },
           ),
         ],

@@ -20,9 +20,12 @@ import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/Verifyfac
 import '../../View/Screen/Sign-in/Sign-in-with-Biometrics/VerifyFaceID/verifyFaceID.dart';
 import '../../View/Screen/Sign-in/Verify_OTP_Page/verifyOTPPage.dart';
 import '../../View/Screen/Sign_As_Screen/sign_as_screen.dart';
-import '../../View/Screen/User Role/BookingsViewClient/Bookings/bookingsPage.dart';
+import '../../View/Screen/User Role/BookingsViewClient/Bookings/Bookingspage/Bookingspage.dart';
+import '../../View/Screen/User Role/BookingsViewClient/Bookings/Request Sent/RequestSent.dart';
+import '../../View/Screen/User Role/BookingsViewClient/BookingsPage.dart';
+import '../../View/Screen/User Role/BookingsViewClient/JobStartedPage/JobProgressPage/JobProgressPage.dart';
 import '../../View/Screen/User Role/Home_Page/AppoinmentScreen/AppoinmentScreen.dart';
-import '../../View/Screen/User Role/Home_Page/ElectricianProviders/ElectricianProviders.dart' show WorkerCard, Electricianproviders;
+import '../../View/Screen/User Role/Home_Page/ElectricianProviders/ElectricianProviders.dart';
 import '../../View/Screen/User Role/Home_Page/NotificationPage/NotificationPage.dart';
 import '../../View/Screen/User Role/Home_Page/Popularservices/Popularservices.dart';
 import '../../View/Screen/User Role/Home_Page/SearchFilter/SearchFilter.dart';
@@ -62,6 +65,9 @@ class AppRoute {
   static const String bookingspage = "/bookingspage";
   static const String providerProfilePage = "/providerProfilePage";
   static const String providerHomeScreen = "/providerHomeScreen";
+  static const String requestSent = "/requestSent";
+  static const String myBookingsPage = "/myBookingsPage";
+  static const String jobPage = "/jobPage";
 
 
 
@@ -97,8 +103,11 @@ class AppRoute {
     GetPage(name: profilePage, page: () =>  ProfilePage()),
     GetPage(name: messagepage, page: () =>  Messagepage()),
     GetPage(name: bookingspage, page: () =>  Bookingspage()),
+    GetPage(name: requestSent, page: () =>  RequestSent()), ///Request Page
     GetPage(name: providerProfilePage, page: () =>  ProviderProfilePage()),
     GetPage(name: providerHomeScreen, page: () =>  ProviderHomeScreen()),
+    GetPage(name: myBookingsPage, page: () =>  MyBookingsPage()),
+    GetPage(name: jobPage, page: () =>  JobPage()),
 
 
 

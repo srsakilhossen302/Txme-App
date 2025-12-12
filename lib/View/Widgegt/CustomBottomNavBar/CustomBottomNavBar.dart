@@ -15,7 +15,7 @@ class CustomBottomNavBar extends StatelessWidget {
         Get.toNamed(AppRoute.homepage);
         break;
       case 1:
-        Get.toNamed(AppRoute.bookingspage);
+        Get.toNamed(AppRoute.requestSent);
         break;
       case 2:
         Get.toNamed(AppRoute.messagepage);

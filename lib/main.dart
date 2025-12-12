@@ -13,10 +13,6 @@ import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  /// Firebase initialized here
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
 
   /// GetX dependencies initialized here
   dependencies.init();

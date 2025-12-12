@@ -72,6 +72,22 @@ class AppColors {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   static const Color A7DFF = Color(0xff3A7DFF);
 
 

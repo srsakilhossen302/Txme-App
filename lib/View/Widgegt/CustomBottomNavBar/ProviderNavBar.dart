@@ -15,7 +15,7 @@ class CustomProvidernavbar extends StatelessWidget {
         Get.toNamed(AppRoute.providerHomeScreen);
         break;
       case 1:
-       // Get.toNamed(AppRoute.bookingspage);
+       // Get.toNamed(AppRoute.Bookingspage);
         break;
       case 2:
         //Get.toNamed(AppRoute.messagepage);

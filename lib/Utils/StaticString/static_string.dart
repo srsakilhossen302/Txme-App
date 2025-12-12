@@ -123,4 +123,27 @@ class AppString{
   static const String clearAll = "Clear All" ;
   static const String applyFilters = "Apply Filters" ;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  static const String requestSent = "Request Sent" ;
+  static const String price = "Price " ;
+  static const String onlyPlease = "Please only start the job when you’re at the job location. " ;
+  static const String time = "Time " ;
+  static const String Done = "Done " ;
+  static const String Date = "Date " ;
+  static const String requesthelp = "Requested help" ;
+  static const String Username = "User name" ;
+  static const String servicerequest = "Your service request has been sent to Sarah. You’ll get a notification as soon as they respond." ;
+
 }

@@ -152,12 +152,12 @@ class _SignUpEmailState extends State<SignUpEmail> {
               Get.toNamed(AppRoute.verifyotppageS);
             },
           ),
-          SizedBox(height: 10),
-          GestureDetector(
-              onTap: (){
-                Get.toNamed(AppRoute.signUpPhone);
-              },
-              child: Text("Phone")),
+          // SizedBox(height: 10),
+          // GestureDetector(
+          //     onTap: (){
+          //       Get.toNamed(AppRoute.signUpPhone);
+          //     },
+          //     child: Text("Phone")),
 
 
           SizedBox(height: 293.w),
