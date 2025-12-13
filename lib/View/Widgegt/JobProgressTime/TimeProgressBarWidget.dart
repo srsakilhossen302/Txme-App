@@ -110,8 +110,8 @@ class _TimeProgressBarWidgetState extends State<TimeProgressBarWidget> {
                   left: progress * progressBarWidth - 8.w, // circle radius half width
                   top: 2.h,
                   child: Container(
-                    width: 16.w,
-                    height: 16.h,
+                    width: 15.w,
+                    height: 14.h,
                     decoration: BoxDecoration(
                       color: Colors.blueGrey.shade700,
                       shape: BoxShape.circle,

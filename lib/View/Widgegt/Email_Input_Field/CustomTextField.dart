@@ -7,7 +7,9 @@ class CustomTextFieldC extends StatelessWidget {
   final String hintText;
   final String label;
   final bool readOnly;
+  final  Color? color;
   final Widget? suffixIcon;
+  final InputBorder? border;
   final VoidCallback? onTap; // Optional onTap callback
 
   const CustomTextFieldC({
@@ -15,6 +17,8 @@ class CustomTextFieldC extends StatelessWidget {
     required this.controller,
 
     required this.label,
+    this.border,
+    this.color,
     required this.hintText,
     this.suffixIcon,
     this.onTap,
@@ -41,15 +45,8 @@ class CustomTextFieldC extends StatelessWidget {
             hintText: hintText,
             hintStyle: TextStyle(color: Colors.grey.shade400),
             filled: true,
-            fillColor: Colors.grey.shade50,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.red601),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.red601),
-            ),
+            fillColor: color ,
+            border: border,
             suffixIcon: suffixIcon, // Use the passed suffixIcon (if any)
           ),
         ),

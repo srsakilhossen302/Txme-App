@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:txme_app/core/App_Routes/app_routes.dart';
 
+import '../../../../Utils/AppColors/app_colors.dart';
 import '../../../../Utils/AppIcons/app_icons.dart';
 import '../../../Widgegt/CustomBottomNavBar/CustomBottomNavBar.dart';
 import '../Home_Page/AppoinmentScreen/ScheduleBookingPage.dart';
@@ -183,7 +184,11 @@ class MyBookingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.FFFFFF,
       appBar: AppBar(
+
+        surfaceTintColor: Colors.transparent,
+        backgroundColor: AppColors.FFFFFF,
         leading: IconButton(
             onPressed: () {
               Get.back();
@@ -199,11 +204,9 @@ class MyBookingsPage extends StatelessWidget {
             style: TextStyle(color: Colors.black, fontSize: 18.sp),
           ),
         ),
-        backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
       ),
-      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
         child: Column(

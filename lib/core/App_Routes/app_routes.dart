@@ -24,6 +24,11 @@ import '../../View/Screen/User Role/BookingsViewClient/Bookings/Bookingspage/Boo
 import '../../View/Screen/User Role/BookingsViewClient/Bookings/Request Sent/RequestSent.dart';
 import '../../View/Screen/User Role/BookingsViewClient/BookingsPage.dart';
 import '../../View/Screen/User Role/BookingsViewClient/JobStartedPage/JobProgressPage/JobProgressPage.dart';
+import '../../View/Screen/User Role/BookingsViewClient/Payment/Invoice/Invoice.dart';
+import '../../View/Screen/User Role/BookingsViewClient/Payment/Onlinepayment/Onlinepayment.dart';
+import '../../View/Screen/User Role/BookingsViewClient/Payment/PaymentPage.dart';
+import '../../View/Screen/User Role/BookingsViewClient/Payment/PaymentSuccessful/PaymentSuccessful.dart';
+import '../../View/Screen/User Role/BookingsViewClient/TotalDuration/TotalDuration.dart';
 import '../../View/Screen/User Role/Home_Page/AppoinmentScreen/AppoinmentScreen.dart';
 import '../../View/Screen/User Role/Home_Page/ElectricianProviders/ElectricianProviders.dart';
 import '../../View/Screen/User Role/Home_Page/NotificationPage/NotificationPage.dart';
@@ -68,6 +73,11 @@ class AppRoute {
   static const String requestSent = "/requestSent";
   static const String myBookingsPage = "/myBookingsPage";
   static const String jobPage = "/jobPage";
+  static const String totalduration = "/totalduration";
+  static const String paymentpage = "/paymentpage";
+  static const String onlinepayment = "/onlinepayment";
+  static const String paymentsuccessful = "/paymentsuccessful";
+  static const String invoicePListPage = "/invoicePListPage";
 
 
 
@@ -108,6 +118,11 @@ class AppRoute {
     GetPage(name: providerHomeScreen, page: () =>  ProviderHomeScreen()),
     GetPage(name: myBookingsPage, page: () =>  MyBookingsPage()),
     GetPage(name: jobPage, page: () =>  JobPage()),
+    GetPage(name: totalduration, page: () =>  Totalduration()),
+    GetPage(name: paymentpage, page: () =>  Paymentpage()),
+    GetPage(name: onlinepayment, page: () =>  Onlinepayment()),
+    GetPage(name: paymentsuccessful, page: () =>  Paymentsuccessful()),
+    GetPage(name: invoicePListPage, page: () =>  InvoicePListPage()),
 
 
 

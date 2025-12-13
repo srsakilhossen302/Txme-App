@@ -107,7 +107,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
 
              SizedBox(height: 50.h),
             CustomTextFieldC(
+              border:
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12.r),
+                borderSide: BorderSide(color: AppColors.red601),
+              ),
               controller: c.nameController,
+              color: Colors.grey.shade50,
               readOnly: false,
               hintText: AppString.name.tr,
               onTap: () {
@@ -119,7 +125,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
              SizedBox(height: 20.h),
 
             CustomTextFieldC(
+              border:
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12.r),
+                borderSide: BorderSide(color: AppColors.red601),
+              ),
               controller: c.dobController,
+              color: Colors.grey.shade50,
               readOnly: true,
               onTap: c.selectDate,
               hintText: AppString.selectDateOfBirth.tr,
@@ -135,7 +147,14 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
             Obx(() {
               // Observing selectedGender and updating the hintText reactively
               return CustomTextFieldC(
+                border:
+                OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.r),
+                  borderSide: BorderSide(color: AppColors.red601),
+                ),
                 controller: c.genderController,
+                color: Colors.grey.shade50,
+
                 readOnly: true, // Make the Gender field read-only
                 onTap: () =>
                     c.selectGender(context), // Trigger gender selection dialog
@@ -152,6 +171,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
              SizedBox(height: 20.h),
             CustomTextFieldC(
               controller: c.nameController,
+              color: Colors.grey.shade50,
+
+              border:
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12.r),
+                borderSide: BorderSide(color: AppColors.red601),
+              ),
               readOnly: false,
               hintText: AppString.enterNationality.tr,
               onTap: () {
@@ -164,6 +190,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
               // Observing selectedGender and updating the hintText reactively
               return CustomTextFieldC(
                 controller: c.residenceController,
+                color: Colors.grey.shade50,
+
+                border:
+                OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.r),
+                  borderSide: BorderSide(color: AppColors.red601),
+                ),
                 readOnly: true, // Make the Gender field read-only
                 onTap: () => c.selectResidence(
                   context,
@@ -182,6 +215,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
 
             CustomTextFieldC(
               controller: c.nameController,
+              color: Colors.grey.shade50,
+
+              border:
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12.r),
+                borderSide: BorderSide(color: AppColors.red601),
+              ),
               readOnly: false,
               hintText: AppString.fullAddress.tr,
               onTap: () {
@@ -191,6 +231,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
              SizedBox(height: 20.h),
             CustomTextFieldC(
               controller: c.nameController,
+              color: Colors.grey.shade50,
+
+              border:
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12.r),
+                borderSide: BorderSide(color: AppColors.red601),
+              ),
               readOnly: false,
               hintText: AppString.postalAddress.tr,
               onTap: () {
@@ -203,6 +250,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
               // Observing selectedGender and updating the hintText reactively
               return CustomTextFieldC(
                 controller: c.iDController,
+                color: Colors.grey.shade50,
+
+                border:
+                OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.r),
+                  borderSide: BorderSide(color: AppColors.red601),
+                ),
                 readOnly: true, // Make the Gender field read-only
                 onTap: () =>
                     c.selectID(context), // Trigger gender selection dialog
@@ -219,6 +273,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
 
             CustomTextFieldC(
               controller: c.nameController,
+              color: Colors.grey.shade50,
+
+              border:
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12.r),
+                borderSide: BorderSide(color: AppColors.red601),
+              ),
               readOnly: false,
               hintText: AppString.inputIdNumber.tr,
               onTap: () {
@@ -232,6 +293,13 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
               // Observing selectedGender and updating the hintText reactively
               return CustomTextFieldC(
                 controller: c.maritalController,
+                color: Colors.grey.shade50,
+
+                border:
+                OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.r),
+                  borderSide: BorderSide(color: AppColors.red601),
+                ),
                 readOnly: true, // Make the Gender field read-only
                 onTap: () =>
                     c.selectMarital(context), // Trigger gender selection dialog

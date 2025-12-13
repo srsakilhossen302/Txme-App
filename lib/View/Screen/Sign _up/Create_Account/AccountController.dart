@@ -81,8 +81,8 @@ class AccountController extends GetxController {
     );
 
     if (selected != null) {
-      genderController.text = selected;  // Update the controller with selected gender
-      selectedGender.value = selected;  // Update the Rx value
+      genderController.text = selected;
+      selectedGender.value = selected;
     }
   }
 

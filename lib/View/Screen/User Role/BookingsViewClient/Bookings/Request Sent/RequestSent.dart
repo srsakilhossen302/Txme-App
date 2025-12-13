@@ -4,14 +4,14 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:txme_app/Utils/AppColors/app_colors.dart';
 import 'package:txme_app/Utils/StaticString/static_string.dart';
+import 'package:txme_app/View/Screen/User%20Role/BookingsViewClient/Bookings/Request%20Sent/RequestCustom.dart';
 import 'package:txme_app/View/Widgegt/Custom_Button/custom_button.dart';
 import 'package:txme_app/core/App_Routes/app_routes.dart';
 import '../../../../../../Utils/AppIcons/app_icons.dart';
 import '../../../../../Widgegt/CustomBottomNavBar/CustomBottomNavBar.dart';
 import '../Model/demo_booking_data.dart';
 
-
-class RequestSent  extends StatefulWidget {
+class RequestSent extends StatefulWidget {
   const RequestSent({super.key});
 
   @override
@@ -19,11 +19,12 @@ class RequestSent  extends StatefulWidget {
 }
 
 class _RequestSentState extends State<RequestSent> {
-  final data = DemoBookingData.booking;
+  // final data = DemoBookingData.booking;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.FFFFFF,
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: SingleChildScrollView(
@@ -60,125 +61,8 @@ class _RequestSentState extends State<RequestSent> {
               SizedBox(
                 height: 20.h,
               ),
-              Container(
-                width: 353.w,
-                height: 162.h,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.r),
-                    border: Border.all(color: Color(0xff3A7DFF), width: 1.w)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(12),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            AppString.Username.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(
-                            height: 12.h,
-                          ),
-                          Text(
-                            AppString.requesthelp.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(
-                            height: 12.h,
-                          ),
-                          Text(
-                            AppString.price.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(
-                            height: 12.h,
-                          ),
-                          Text(
-                            AppString.Date.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(
-                            height: 12.h,
-                          ),
-                          Text(
-                            AppString.time.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 10.h, right: 12.w),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text(
-                            data.name.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(height: 12.h),
 
-                          Text(
-                            data.service.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(height: 12.h),
-
-                          /// এখানে price + (Hourly)
-                          Text(
-                            data.formattedPrice.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(height: 12.h),
-
-                          Text(
-                            data.date.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                          SizedBox(height: 12.h),
-
-                          Text(
-                            data.time.tr,
-                            style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff1F2937)),
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-              ),
+              Requestcustom(),
               SizedBox(height: 20.h),
               Padding(
                 padding: EdgeInsets.only(right: 240.w),
@@ -209,15 +93,15 @@ class _RequestSentState extends State<RequestSent> {
                 ),
                 child: Center(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        AppString.onlyPlease.tr,
-                        style: TextStyle(
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w400,
-                            color: Color(0xff1F2937)),
-                      ),
-                    )),
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    AppString.onlyPlease.tr,
+                    style: TextStyle(
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff1F2937)),
+                  ),
+                )),
               ),
               SizedBox(height: 33.h),
               CustomButton(
@@ -228,15 +112,17 @@ class _RequestSentState extends State<RequestSent> {
                       color: AppColors.red601),
                   child: Center(
                       child: Text(
-                        AppString.Done.tr,
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 18,
-                            color: AppColors.FFFFFF),
-                      )),
+                    AppString.Done.tr,
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18,
+                        color: AppColors.FFFFFF),
+                  )),
                   onTap: () {
                     Get.toNamed(AppRoute.myBookingsPage);
-                  })
+                  }
+
+                  )
             ],
           ),
         ),

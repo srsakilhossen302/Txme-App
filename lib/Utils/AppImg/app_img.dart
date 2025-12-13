@@ -44,6 +44,7 @@ class AppImg {
   static const String earnings = "$basePath/Earnings.png";
   static const String active = "$basePath/Active.png";
   static const String profession = "$basePath/Profession.png";
+  static const String creditcard = "$basePath/credit card.png";
 
 
 
